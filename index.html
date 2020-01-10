@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Homework</title>
+    <script src="./js/app.js" type="text/javascript">
+
+    </script>
+  </head>
+  <body>
+    <div class="top-header">
+      <h1 id="heading">Film Storage</h1>
+      <h3 id="sub-title">Generate you're own film list with your personal ratings</h3>
+    </div>
+
+    <form class="entry-form" action="index.html" method="post">
+      <p>Add Info</p>
+
+      <label for="film-title">Title:</label>
+      <input id="form-film-title" type="text" name="film-title" value="">
+
+      <label for="film-star-rating">Star Rating: </label>
+      <input id="form-film-star-rating" type="number" name="film-star-rating" min="1" max="5">
+
+      <label for="form-select">Feelings?</label>
+      <select  id="form-film-select" name="form-select">
+        <option value="" disabled selected></option>
+        <option value="objectively bad but decent">objectively bad but decent</option>
+        <option value="hanging, so one to rewatch">hanging, so one to rewatch</option>
+        <option value="mad violence">mad violence</option>
+
+      </select>
+
+      <textarea id="form-film-comments"> Any Extra Comments?</textarea>
+      <br>
+      <input id="form-film-input" type="submit" name="form-submit" value="Add">
+    </form>
+    <br>
+
+    <ul class="movie-list">
+
+    </ul>
+    <br>
+    <input id="delete-all-button" type="button" name="delete-all" value="Delete All Films">
+  </body>
+</html>
