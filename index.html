@@ -13,27 +13,28 @@
       <h3 id="sub-title">Generate you're own film list with your personal ratings</h3>
     </div>
 
-    <form class="entry-form" action="index.html" method="post">
+    <form id="form">
       <p>Add Info</p>
 
-      <label for="film-title">Title:</label>
-      <input id="form-film-title" type="text" name="film-title" value="">
+      <label for="title">Title:</label>
+      <input id="title" type="text" value="">
 
-      <label for="film-star-rating">Star Rating: </label>
-      <input id="form-film-star-rating" type="number" name="film-star-rating" min="1" max="5">
+      <label for="rating">Star Rating: </label>
+      <input id="rating" type="number" min="1" max="5">
 
-      <label for="form-select">Feelings?</label>
-      <select  id="form-film-select" name="form-select">
+      <label for="select">Feelings?</label>
+      <select  id="select">
         <option value="" disabled selected></option>
-        <option value="objectively bad but decent">objectively bad but decent</option>
-        <option value="hanging, so one to rewatch">hanging, so one to rewatch</option>
-        <option value="mad violence">mad violence</option>
-
+        <option value="great">no arguments, just good</option>
+        <option value="decent">objectively bad but decent</option>
+        <option value="rewatch">hanging, so one to rewatch</option>
+        <option value="violent">mad violence</option>
+        <option value="jcvd">van damme baby</option>
       </select>
 
-      <textarea id="form-film-comments"> Any Extra Comments?</textarea>
+      <textarea id="comments" placeholder="Any Extra Comments?"></textarea>
       <br>
-      <input id="form-film-input" type="submit" name="form-submit" value="Add">
+      <input type="submit" value="Add">
     </form>
     <br>
 
@@ -41,6 +42,6 @@
 
     </ul>
     <br>
-    <input id="delete-all-button" type="button" name="delete-all" value="Delete All Films">
+    <input id="delete-all-button" type="button" value="Delete All Films">
   </body>
 </html>
