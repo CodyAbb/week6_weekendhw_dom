@@ -20,24 +20,33 @@
         <input class="col-75" id="title" type="text" value="">
 
         <label class="col-25" for="rating">Star Rating: </label>
-        <input type="range" min="1" max="5" value="3" class="slider" id="rating">
+        <input type="range" min="1" max="5" value="3" class="slider" id="rating" list="numbers">
+        <datalist id="numbers">
+          <option value="0" label="0"></option>
+          <option value="1" label="1"></option>
+          <option value="2" label="2"></option>
+          <option value="3" label="3"></option>
+          <option value="4" label="4"></option>
+          <option value="5" label="5"></option>
+
+        </datalist>
 
         <label class="col-25" for="select">Feelings?</label>
         <select class="dropdown" id="select">
           <div class="dropdown-content">
             <option value="" disabled selected></option>
-            <option value="great">no arguments, just good</option>
-            <option value="decent">objectively bad but decent</option>
-            <option value="rewatch">hanging, so one to rewatch</option>
-            <option value="violent">mad violence</option>
-            <option value="jcvd">van damme baby</option>
-            <option value="bad">complete and utter dross</option>
+            <option value="no arguments, just good">no arguments, just good</option>
+            <option value="objectively bad but decent">objectively bad but decent</option>
+            <option value="hanging, so one to rewatch">hanging, so one to rewatch</option>
+            <option value="mad violence">mad violence</option>
+            <option value="van damme baby">van damme baby</option>
+            <option value="complete and utter dross">complete and utter dross</option>
           </div>
         </select>
 
         <textarea id="comments" placeholder="Any Extra Comments?"></textarea>
         <br>
-        <input type="submit" value="Add">
+        <input class="input-buttons" type="submit" value="Add">
       </form>
     </div>
 
@@ -47,6 +56,6 @@
 
     </ul>
     <br>
-    <input id="delete-all-button" type="button" value="Delete All Films">
+    <input class="input-buttons" id="delete-all-button" type="button" value="Delete All Films">
   </body>
 </html>

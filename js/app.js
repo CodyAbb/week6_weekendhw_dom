@@ -18,19 +18,19 @@ const handleSubmitForm = event => {
   const movieList = document.querySelector('.movie-list');
 
   const liTitle = document.createElement('li');
-  liTitle.textContent = `${title}`;
+  liTitle.textContent = `Title: ${title}`;
   liTitle.classList.add("filmItemDetails");
 
   const liRating = document.createElement('li');
-  liRating.textContent = `${rating} out of 5`;
+  liRating.textContent = `${rating} stars out of 5`;
   liRating.classList.add("filmItemDetails");
 
   const liSelect = document.createElement('li');
-  liSelect.textContent = `${select}`;
+  liSelect.textContent = `Snapchot: ${select}`;
   liSelect.classList.add("filmItemDetails");
 
   const liComments = document.createElement('li');
-  liComments.textContent = `${comments}`;
+  liComments.textContent = `Thoughts: ${comments}`;
   liComments.classList.add("filmItemDetails");
 
   const liFilmItems = document.createElement('li');

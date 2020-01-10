@@ -5,34 +5,71 @@ body {
   margin  : 0;
 }
 
-#delete-all-button {
-  padding      : 5px;
-  border       : 2px solid #333;
-  border-radius: 5px;
-  background   : none;
-  cursor       : pointer;
+.top-header{
+  margin-left: 30px;
+}
+
+.input-form{
+  width: 50%;
+  display: block;
+  margin-top: 30px;
+  margin-left: 20px;
+  border: 2px solid black;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.input-form p{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+/* Style inputs */
+input[type=text], select, textarea, .slider{
+  padding: 2px, 5px;
+  margin: 20px 0;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  height: 20px;
+}
+
+label{
+  width:30%;
+  display:inline-block;
+  position:relative
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid black;
 }
 
 
 
-#delete-all-button:hover,
-#delete-all-button:focus {
-  outline     : none;
-  background  : #000;
-  color       : #FFF;
+/* Style the submit button */
+input[type=submit] {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.input-form {
-  float: left;
+#comments {
+  height: 70px;
 }
 
 
 
-li.filmItem {
-  /* width: 50%; */
-  border: 1px solid #000;
-  margin: 10px;
-}
 
 ul {
   display: flex;
@@ -45,5 +82,19 @@ ul {
 li {
   list-style: none;
   flex-basis: calc((100% / 3) - 22px);
-  text-align: center;
+  text-align: left;
+}
+
+li.filmItem {
+  /* width: 50%; */
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+#delete-all-button{
+  background-color: black;
+  color: white;
+  margin-left: 30px;
+  padding: 14px 20px;
+  border: none;
 }
