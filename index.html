@@ -2,10 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>DOM Homework</title>
-    <script src="./js/app.js" type="text/javascript">
-
-    </script>
+    <title>Film Storage</title>
+    <script src="./js/app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="top-header">
@@ -13,29 +12,35 @@
       <h3 id="sub-title">Generate you're own film list with your personal ratings</h3>
     </div>
 
-    <form id="form">
-      <p>Add Info</p>
+    <div class="input-form">
+      <form id="form">
+        <p>Add Info</p>
 
-      <label for="title">Title:</label>
-      <input id="title" type="text" value="">
+        <label class="col-25" for="title">Title:</label>
+        <input class="col-75" id="title" type="text" value="">
 
-      <label for="rating">Star Rating: </label>
-      <input id="rating" type="number" min="1" max="5">
+        <label class="col-25" for="rating">Star Rating: </label>
+        <input type="range" min="1" max="5" value="3" class="slider" id="rating">
 
-      <label for="select">Feelings?</label>
-      <select  id="select">
-        <option value="" disabled selected></option>
-        <option value="great">no arguments, just good</option>
-        <option value="decent">objectively bad but decent</option>
-        <option value="rewatch">hanging, so one to rewatch</option>
-        <option value="violent">mad violence</option>
-        <option value="jcvd">van damme baby</option>
-      </select>
+        <label class="col-25" for="select">Feelings?</label>
+        <select class="dropdown" id="select">
+          <div class="dropdown-content">
+            <option value="" disabled selected></option>
+            <option value="great">no arguments, just good</option>
+            <option value="decent">objectively bad but decent</option>
+            <option value="rewatch">hanging, so one to rewatch</option>
+            <option value="violent">mad violence</option>
+            <option value="jcvd">van damme baby</option>
+            <option value="bad">complete and utter dross</option>
+          </div>
+        </select>
 
-      <textarea id="comments" placeholder="Any Extra Comments?"></textarea>
-      <br>
-      <input type="submit" value="Add">
-    </form>
+        <textarea id="comments" placeholder="Any Extra Comments?"></textarea>
+        <br>
+        <input type="submit" value="Add">
+      </form>
+    </div>
+
     <br>
 
     <ul class="movie-list">
